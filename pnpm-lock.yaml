@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@primevue/themes':
+    specifier: 4.0.0-rc.2
+    version: 4.0.0-rc.2(@primeuix/styled@0.0.1)
   primeicons:
     specifier: ^7.0.0
     version: 7.0.0
@@ -395,6 +398,15 @@ packages:
     resolution: {integrity: sha512-gcC4Pbal+q+HDQl7/hlrrvjFnGRXSjQDgnaJZCgPTXE8XISTYP/lXHZ1Sir+9n/u5WBZbLzdwjsSY9ipjsn4fA==}
     engines: {node: '>=12.11.0'}
     dev: true
+
+  /@primevue/themes@4.0.0-rc.2(@primeuix/styled@0.0.1):
+    resolution: {integrity: sha512-4y9NlDDwA4J51aNoO1+7anPOwjNTpCzetOZlKY7pQfxxpAmKUM4ouf87kjQz0/IFjBIxN4ZK3XfwtamFoL08Ug==}
+    engines: {node: '>=12.11.0'}
+    peerDependencies:
+      '@primeuix/styled': ^0.0.1
+    dependencies:
+      '@primeuix/styled': 0.0.1
+    dev: false
 
   /@rollup/pluginutils@5.1.0:
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}

@@ -28,3 +28,16 @@ body {
 .font-bold {
 	@extend .lxgw-wenkai-mono-tc-bold;
 }
+
+.p-listbox:not(.p-disabled) .p-listbox-option.p-listbox-option-selected {
+	background-color: #e0f2fe !important; /* bg-sky-100 */
+	color: #0369a1 !important; /* text-sky-800 */
+}
+
+.block::before {
+	content: "";
+	display: block;
+	height: 45px; /* 偏移量大小 */
+	margin-top: -45px; /* 负值确保不影响布局 */
+	visibility: hidden;
+}
