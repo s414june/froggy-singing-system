@@ -32,7 +32,7 @@ const gotoListItem = () => {
 </script>
 <template>
 	<div class="card flex justify-center">
-		<div @click="openPosition('topright')" label="Show">
+		<div @click="openPosition('topright')">
 			<i class="pi pi-bars !text-xl"></i>
 		</div>
 		<Dialog

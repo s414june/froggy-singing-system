@@ -6,7 +6,7 @@ const openMenu = ref(false)
 </script>
 <template>
 	<nav
-		class="flex justify-between items-center py-2 px-4 fixed w-full bg-white">
+		class="flex justify-between items-center py-2 px-4 fixed max-w-[500px] w-full bg-white shadow-md">
 		<div class="flex font-bold text-sky-600 text-lg">
 			<h1>他可能不是青蛙</h1>
 			<span class="mx-1">-</span>
