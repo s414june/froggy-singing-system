@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@400;700&display=swap");
+
+.lxgw-wenkai-mono-tc-regular {
+	font-family: "LXGW WenKai Mono TC", monospace;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.lxgw-wenkai-mono-tc-bold {
+	font-family: "LXGW WenKai Mono TC", monospace;
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	@extend .lxgw-wenkai-mono-tc-regular;
+}
+
+html,
+body {
+	@apply text-slate-700;
+}
+
+.font-bold {
+	@extend .lxgw-wenkai-mono-tc-bold;
+}
