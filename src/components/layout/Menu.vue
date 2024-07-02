@@ -43,7 +43,7 @@ const gotoListItem = () => {
 			:draggable="false"
 			:style="{ width: '300px', maxWitdh: '80%', margin: '8px' }"
 			position="topright"
-			class="menu"
+			class="menu bg-white"
 			:pt="menuStyle">
 			<template v-slot:header>
 				<div
@@ -61,9 +61,16 @@ const gotoListItem = () => {
 					:options="menuList"
 					optionLabel="label"
 					@click="gotoListItem()"
-					class="w-full md:w-56 !border-none !shadow-none menu-list" />
+					class="w-full md:w-56 !border-none !shadow-none !text-sky-600 w-full list" />
 			</div>
 		</Dialog>
 	</div>
 </template>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+:deep(.list) {
+	li {
+		padding: 4px 8px;
+		border-radius: 8px;
+	}
+}
+</style>
