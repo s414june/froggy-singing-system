@@ -69,7 +69,7 @@ const gotoListItem = () => {
 <style scoped lang="scss">
 :deep(.list) {
 	li {
-		padding: 4px 8px;
+		padding: 12px 8px;
 		border-radius: 8px;
 	}
 }

@@ -37,7 +37,7 @@ body {
 .block::before {
 	content: "";
 	display: block;
-	height: 45px; /* 偏移量大小 */
-	margin-top: -45px; /* 负值确保不影响布局 */
+	height: calc(45px + 1.5rem); /* 偏移量大小 */
+	margin-top: calc((45px + 1.5rem) * (-1)); /* 负值确保不影响布局 */
 	visibility: hidden;
 }

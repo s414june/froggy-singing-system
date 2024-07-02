@@ -5,9 +5,10 @@ import Footer from "./components/layout/Footer.vue"
 
 <template>
 	<div class="flex h-dvh justify-center">
-		<div class="max-w-[500px] relative shadow-lg min-h-full flex flex-col">
+		<div
+			class="w-[500px] max-w-full relative shadow-lg min-h-dvh h-max flex flex-col">
 			<Navbar></Navbar>
-			<section class="grow mt-[45px]">
+			<section class="grow mt-[45px] w-full">
 				<router-view></router-view>
 			</section>
 			<Footer></Footer>

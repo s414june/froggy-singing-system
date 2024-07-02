@@ -7,13 +7,19 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Button: typeof import('primevue/button')['default']
+    Column: typeof import('primevue/column')['default']
+    DataTable: typeof import('primevue/datatable')['default']
     Dialog: typeof import('primevue/dialog')['default']
     Footer: typeof import('./src/components/layout/Footer.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    InputGroup: typeof import('primevue/inputgroup')['default']
+    InputText: typeof import('primevue/inputtext')['default']
     Listbox: typeof import('primevue/listbox')['default']
     Menu: typeof import('./src/components/layout/Menu.vue')['default']
     Navbar: typeof import('./src/components/layout/Navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Tag: typeof import('primevue/tag')['default']
   }
 }
